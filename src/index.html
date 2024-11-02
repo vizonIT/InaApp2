@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ina App2</title>
+  </head>
+  <body class="flex-col items-center justify-center">
+    <div
+      class="container mx-auto my-2 flex-col items-center justify-center bg-main-background"
+    >
+      <header class="flex-col justify-evenly">
+        <div class="flex items-center justify-between gap-16 lg:hidden">
+          <div class="flex items-center justify-between gap-3">
+            <img src="./images/Time.svg" alt="time icon" />
+            <img src="./images/icon-geo-filled.svg" alt="location icon" />
+          </div>
+          <div class="flex items-center justify-between gap-3 bg-white">
+            <img src="./images/networkIndicator.svg" alt="network icon" />
+            <img src="./images/WiFiIcon.svg" alt="wifi icon" />
+            <img src="./images/batteryIndicator.svg" alt="battery icon" />
+          </div>
+        </div>
+        <div class="mt-5 flex items-center justify-between">
+          <div></div>
+          <img
+            class="place-self-end pt-2"
+            src="./images/userProfliepix.svg"
+            alt="profile image"
+          />
+        </div>
+      </header>
+
+      <section class="mx-auto mt-4 flex-col items-center justify-center gap-6">
+        <h1
+          class="w-48 place-self-center text-center font-satoshi text-2xl font-bold text-main-dark lg:w-80"
+        >
+          Hi Imade! Welcome to iná
+        </h1>
+        <p
+          class="h-2 w-64 place-self-center p-3 text-center text-lg font-normal leading-5 text-main-dark lg:w-[520px]"
+        >
+          Get started by adding a few addresses to your account
+        </p>
+        <div class="place-self-center">
+          <button
+            class="mx-auto mt-10 h-10 w-40 rounded-lg bg-orange-600 text-base text-white"
+          >
+            Find an address
+          </button>
+        </div>
+      </section>
+      <main class="my-4 flex-col items-center justify-center">
+        <h2
+          class="w-[400px] place-self-center text-center font-satoshi text-3xl font-bold"
+        >
+          Popular locations right now
+        </h2>
+        <div
+          class="justify-beteween flex items-center gap-12 place-self-center overflow-x-hidden p-2 sm:grid sm:grid-cols-2 md:gap-14 lg:w-[60%] lg:grid-cols-3 lg:gap-2"
+        >
+          <div
+            class="h-28 w-48 flex-col items-start justify-between space-y-3 rounded-lg bg-black p-2 lg:mt-12"
+          >
+            <div
+              class="w-32 font-satoshi text-lg font-normal leading-[18.8px] text-white"
+            >
+              MKO Abiola Gardens, Alausa
+            </div>
+            <div class="mt-3 flex place-items-baseline justify-between">
+              <div class="size-3 text-white">OFF</div>
+              <img class="w-3" src="./images/Lantern.svg" alt="lantern" />
+            </div>
+          </div>
+          <div
+            class="spotContainerOn h-28 w-48 flex-col items-start justify-between space-y-10 rounded-lg bg-orange-100 p-2 lg:mt-12"
+          >
+            <div
+              class="w-32 font-satoshi text-lg font-normal leading-[18.8px] text-main-dark"
+            >
+              Banana Island, Ikoyi
+            </div>
+            <div class="mt-3 flex place-items-baseline justify-between">
+              <div class="size-3">ON</div>
+              <img class="w-3" src="./images/bulb.svg" alt="bulb" />
+            </div>
+          </div>
+          <div
+            class="spotContainerOn h-28 w-48 flex-col items-start justify-between space-y-10 rounded-lg bg-orange-100 p-2 lg:mt-12"
+          >
+            <div
+              class="w-32 font-satoshi text-lg font-normal leading-[18.8px] text-main-dark"
+            >
+              Folami Street, Somolu
+            </div>
+            <div class="mt-3 flex place-items-baseline justify-between">
+              <div class="size-3">ON</div>
+              <img class="w-3" src="./images/bulb.svg" alt="bulb" />
+            </div>
+          </div>
+          <div
+            class="spotContainerOff h-28 w-48 flex-col items-start justify-between space-y-10 rounded-lg bg-black p-2 lg:mt-12"
+          >
+            <div
+              class="spot1 w-32 font-satoshi text-lg font-normal leading-[18.8px] text-white"
+            >
+              Jacob Mews Estate, Yaba
+            </div>
+            <div
+              class="lightStatus mt-3 flex place-items-baseline justify-between"
+            >
+              <div class="off size-3 text-white">OFF</div>
+              <img class="w-3" src="./images/Lantern.svg" alt="lantern" />
+            </div>
+          </div>
+          <div
+            class="spotContainerOff h-28 w-48 flex-col items-start justify-between space-y-10 rounded-lg bg-black p-2 lg:mt-12"
+          >
+            <div
+              class="spot1 w-32 font-satoshi text-lg font-normal leading-[18.8px] text-white"
+            >
+              Brooks Estate, Magodo
+            </div>
+            <div
+              class="lightStatus mt-3 flex place-items-baseline justify-between"
+            >
+              <div class="off off size-3 text-white">OFF</div>
+              <img class="w-3" src="./images/Lantern.svg" alt="lantern" />
+            </div>
+          </div>
+          <div
+            class="spotContainerOn h-28 w-48 flex-col items-start justify-between space-y-10 rounded-lg bg-orange-100 p-2 lg:mt-12"
+          >
+            <div
+              class="spot2 w-32 font-satoshi text-lg font-normal leading-[18.8px] text-main-dark"
+            >
+              ChevyView Estate, Chevron
+            </div>
+            <div
+              class="lightStatus mt-3 flex place-items-baseline justify-between"
+            >
+              <div class="size-3">ON</div>
+              <img class="w-3" src="./images/bulb.svg" alt="bulb" />
+            </div>
+          </div>
+        </div>
+      </main>
+      <section class="ranking mx-auto mt-3 flex-col justify-between">
+        <h3
+          class="w-[400px] place-self-center p-2 font-satoshi text-3xl font-bold text-main-dark"
+        >
+          Highest ranked locations
+        </h3>
+        <div
+          class="my-2 hidden h-[2px] w-[60%] place-self-center bg-[#E3E3E0] lg:flex"
+        ></div>
+        <div
+          class="tabularRanking flex-col items-center justify-start place-self-center"
+        >
+          <div
+            class="rank flex items-center justify-center gap-x-[3rem] lg:gap-x-[5rem]"
+          >
+            <div class="font-satoshi font-semibold text-main-dark">Rank</div>
+            <div class="font-satoshi font-semibold text-main-dark">
+              Location
+            </div>
+            <div
+              class="ml-12 flex w-60 justify-normal font-satoshi font-semibold text-main-dark"
+            >
+              Average daily power
+              <img src="./images/infoIcon.svg" alt="information icon" />
+            </div>
+          </div>
+          <div class="rank mt-2 flex items-center justify-start gap-x-5">
+            <div class="nextOrder flex items-center justify-between">
+              <p class="text-xs md:text-sm lg:text-base">1</p>
+              <p class="ml-10 px-2 text-xs md:text-sm lg:text-base">
+                Streeter Estate, Irega, Lagos
+              </p>
+            </div>
+            <p class="hours ml-2 px-4 text-xs md:text-sm lg:text-base">
+              24 hrs/day
+            </p>
+          </div>
+          <div class="rank mt-2 flex items-center justify-start gap-x-5">
+            <div class="nextOrder flex items-center justify-between">
+              <p class="text-xs md:text-sm lg:text-base">2</p>
+              <p class="ml-10 px-2 text-xs md:text-sm lg:text-base">
+                Street Estate, Irega, Lagos
+              </p>
+            </div>
+            <p class="hours ml-5 px-4 text-xs md:text-sm lg:text-base">
+              20 hrs/day
+            </p>
+          </div>
+          <div class="rank mt-2 flex items-center justify-start gap-x-5">
+            <div class="nextOrder flex items-center justify-between">
+              <p class="text-xs md:text-sm lg:text-base">3</p>
+              <p class="ml-10 px-2 text-xs md:text-sm lg:text-base">
+                Streetest Estate, Irega, Lagos
+              </p>
+            </div>
+            <p class="hours px-4 text-xs md:text-sm lg:text-base">20 hrs/day</p>
+          </div>
+          <div class="rank mt-2 flex items-center justify-start gap-x-5">
+            <div class="nextOrder flex items-center justify-between">
+              <p class="text-xs md:text-sm lg:text-base">4</p>
+              <p class="ml-10 px-2 text-xs md:text-sm lg:text-base">
+                Streetish Estate, Irega, Lagos
+              </p>
+            </div>
+            <p class="hours px-4 text-xs md:text-sm lg:text-base">19 hrs/day</p>
+          </div>
+          <div class="rank mt-2 flex items-center justify-start gap-x-5">
+            <div class="nextOrder flex items-center justify-between">
+              <p class="text-xs md:text-sm lg:text-base">5</p>
+              <p class="ml-10 px-2 text-xs md:text-sm lg:text-base">
+                Streetation Estate, Irega, Lagos
+              </p>
+            </div>
+            <p class="hours text-xs md:text-sm lg:text-base">18 hrs/day</p>
+          </div>
+        </div>
+        <div
+          class="my-2 mb-6 hidden h-[2px] w-[60%] place-self-center bg-[#E3E3E0] lg:flex"
+        ></div>
+      </section>
+      <section
+        class="bottom-0 left-0 mx-auto flex-col items-center justify-center lg:fixed lg:left-0 lg:top-0 lg:h-full lg:flex-row"
+      >
+        <nav>
+          <ul
+            class="flex items-center justify-between gap-2 lg:h-[80%] lg:flex-col lg:items-center lg:justify-between lg:space-y-2"
+          >
+            <li class="hidden lg:ml-4 lg:list-item lg:place-self-center">
+              <a href="#"
+                ><img class="mt-4" src="./images/ináLogo.svg" alt="logo icon"
+              /></a>
+            </li>
+            <li class="place-self-center">
+              <a href="#"
+                ><img class="mt-4" src="./images/home.svg" alt="home icon"
+              /></a>
+            </li>
+            <li class="place-self-center">
+              <a href="#"
+                ><img class="mt-4" src="./images/search.svg" alt="search icon"
+              /></a>
+            </li>
+            <li class="place-self-center">
+              <a href="#"
+                ><img class="mt-4" src="./images/map.svg" alt="map icon"
+              /></a>
+            </li>
+            <li class="place-self-center">
+              <a href="#"
+                ><img
+                  class="mt-4"
+                  src="./images/forcast.svg"
+                  alt="forcast icon"
+              /></a>
+            </li>
+            <li class="place-self-center">
+              <a href="#"
+                ><img
+                  class="mt-4"
+                  src="./images/ranking.svg"
+                  alt="ranking icon"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="m-2 h-1 w-28 place-self-center bg-main-dark lg:hidden"
+        ></div>
+      </section>
+    </div>
+  </body>
+</html>
